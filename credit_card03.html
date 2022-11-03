@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Window</title>
+</head>
+<body>
+    <div style="background-color:floralwhite; border-radius: 20px; padding: 20px; margin: 40px 300px 0px 300px; border-style: solid; border-color: black;">
+        <div style="text-align: center;  font-size: 28px;">
+            Total Amount Payable:<br>
+            <p style="font-size: 32px;"> $ 12,984.50</p>
+        </div>
+        <div style="text-align: center; font-size: 20px; padding: 20px;">
+            Credit Card Details <img src="Images/CreditCard02.png" alt="" height="38px">
+        </div>
+        <div>
+            <form action="" style="margin: 10px 30px 10px 220px;">
+                <div class="form-body">
+                    <!-- Card Number -->
+                    <input type="text" class="card-number" placeholder="Card Number" required>
+                    <div>
+                        <input type="text" placeholder="Name On Card" required>
+                    </div>
+                 
+                    <!-- Date Field -->
+                    <div class="date-field" style="margin-left: -85px;">
+                      <div class="month">
+                          Expiry Date: 
+                        <select name="Month">
+                          <option value="january">January</option>
+                          <option value="february">February</option>
+                          <option value="march">March</option>
+                          <option value="april">April</option>
+                          <option value="may">May</option>
+                          <option value="june">June</option>
+                          <option value="july">July</option>
+                          <option value="august">August</option>
+                          <option value="september">September</option>
+                          <option value="october">October</option>
+                          <option value="november">November</option>
+                          <option value="december">December</option>
+                        </select>
+                      
+                        <select name="Year">
+                          <option value="2016">2016</option>
+                          <option value="2017">2017</option>
+                          <option value="2018">2018</option>
+                          <option value="2019">2019</option>
+                          <option value="2020">2020</option>
+                          <option value="2021">2021</option>
+                          <option value="2022">2022</option>
+                          <option value="2023">2023</option>
+                          <option value="2024">2024</option>
+                        </select>
+                      </div>
+                    </div>
+                 
+                    <!-- Card Verification Field -->
+                    <div class="card-verification">
+                      <div class="cvv-input">
+                        <input type="password" placeholder="CVV" required>
+                      </div>
+                      <div class="cvv-details">
+                        <p>3 or 4 digits usually found <br> on the signature strip</p>
+                      </div>
+                    </div>
+                 
+                    <!-- Buttons -->
+                    <button type="submit" class="proceed-btn" onclick="Payment()"><a href="payment.html">Proceed</a></button>
+                  </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    function Payment(){
+        alert("Payment Successful")
+    }
+</script>

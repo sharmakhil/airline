@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Cost Estimator</title>
+	<link rel="stylesheet" href="css/Cost Estimator.css">
+</head>
+<body>
+	<div style="text-align:center">
+		<h2>Cost Estimator</h2>
+		
+	  </div>
+	  <div class="Instructions">
+		  <ul>
+			  <li>Cost of One way trip= $2500 for First Class, $1500 for Buisness class and $750 for Economy class</li>
+			  <li>For Return Journey prices are added for 2 times One way trip</li>
+			  <li>For Chlidren aged 4-14 ticket prices are 75% of the price</li>
+			  <li>For Infants aged 0-4 ticket prices are 50% of the price</li>
+			  <li>Add Ons like food and beverages are charged separately. <a href="menu.html">click to see the menu</a></li>
+		  </ul>
+	  </div>
+	<div class="container">
+	
+		
+		<fieldset id="container">
+		<form name="calculator">
+	
+				<input id="display" type="text" name="display" readonly>
+	
+				<input class="button digits" type="button" value="7" onclick="calculator.display.value += '7'">
+				<input class="button digits" type="button" value="8" onclick="calculator.display.value += '8'">
+				<input class="button digits" type="button" value="9" onclick="calculator.display.value += '9'">
+				<input class="button mathButtons" type="button" value="+" onclick="calculator.display.value += ' + '">
+				<br>
+				<input class="button digits" type="button" value="4" onclick="calculator.display.value += '4'">
+				<input class="button digits" type="button" value="5" onclick="calculator.display.value += '5'">
+				<input class="button digits" type="button" value="6" onclick="calculator.display.value += '6'">
+				<input class="button mathButtons" type="button" value="-" onclick="calculator.display.value += ' - '">
+				<br>
+				<input class="button digits" type="button" value="1" onclick="calculator.display.value += '1'">
+				<input class="button digits" type="button" value="2" onclick="calculator.display.value += '2'">
+				<input class="button digits" type="button" value="3" onclick="calculator.display.value += '3'">
+				<input class="button mathButtons" type="button" value="x" onclick="calculator.display.value += ' * '">
+				<br>
+				<input id="clearButton" class="button" type="button" value="C" onclick="calculator.display.value = ''">
+				<input class="button digits" type="button" value="0" onclick="calculator.display.value += '0'">
+				<input class="button mathButtons" type="button" value="=" onclick="calculator.display.value = eval(calculator.display.value)">
+				<input class="button mathButtons" type="button" value="/" onclick="calculator.display.value += ' / '">
+			</form>
+		</fieldset>
+	</div>
+</body>
+</html>
